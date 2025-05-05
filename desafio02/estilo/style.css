@@ -38,6 +38,10 @@ section {
   padding-left: 10px;
   padding-right: 10px;
 }
+#img01 {
+  background-image: url('/desafio02/imagens/');
+}
+ 
  .normal {
  background-color: white;
 }
