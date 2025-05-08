@@ -8,14 +8,25 @@
 <style>
   body {
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 890px;
   }
   table {
-    width: 500px;
+  position: relative;
+  width: 500px;
    border: 1px solid black;  
    border-collapse: collapse;
 }
+
+ thead > tr > th {
+  position: sticky;
+  top: -1px;
+}
+ tr:nth-child(odd){
+  background-color:lightgrey;
+ }
 th {
-  background-color: darkgrey;
+  background-color: rgb(32, 29, 29);
+  color: white;
 }
   td, th {
     border: 1px solid black;
@@ -29,6 +40,7 @@ th {
   .num {
     text-align: right;
   }
+ 
 </style>
 
 
@@ -157,6 +169,6 @@ th {
     <td class="num">212 583 750</td>
    </tr>
   </tfoot>
-</table>
+</table>       
 </body>
 </html>
