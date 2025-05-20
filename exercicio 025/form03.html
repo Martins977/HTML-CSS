@@ -12,13 +12,13 @@
 </style>
 <body>
   <h1>Período Letivo</h1>
-  <form action="formulario.php" method="post" >
+  <form  method="get" >
     <p>
       <label for="nome">Nome do Aluno</label>
       <input type="text" name="nome" id="nome" required minlength="5" maxlength="15" placeholder="ex:Jão">
     </p>
     <p>
-      <label for="nota">Nota</label>
+      <label for="nota">Média Escolar</label>
       <input type="number" name="nota" id="nota" required min="0" max="10" step="0.5" value="5">
     </p>
     <p>
@@ -28,6 +28,10 @@
     <p>
       <label for="dia"> Data da prova </label>
       <input type="date" name="dai" id="dia" required value="21/05/2025">
+    </p>
+    <p>
+      <label for="time">Hora da Prova</label>
+      <input type="time" name="time" id="time" value="17:00">
     </p>
     <p>
       <label for="enviar">Enviar</label>
