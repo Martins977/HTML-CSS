@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkbox e Radio</title>
+</head>
+<style>
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #botao {
+    padding: 10px;
+    background-color: cornflowerblue;
+  }
+  #botao:hover{
+    background-color: rgb(45, 82, 83);
+  }
+</style>
+<body>
+  <h1>Formulário com Checkbox e Radio</h1>
+  <form action="dados.php" method="post" autocomplete="on">
+    <fieldset>
+      <legend>Esportes</legend>
+      <input type="checkbox" name="esfutubol" id="iesfutubol"> <label for="esfutebol">Futebol</label><br>
+      <input type="checkbox" name="esnatacao" id="iesnatacao"> <label for="esnatacao">Natação</label><br>
+      <input type="checkbox" name="estenis" id="iestenis"> <label for="estenis">Tênis</label><br>
+      <input type="checkbox" name="esbasquete" id="iesbasquete"> <label for="esbasquete">Basquete</label><br>
+    </fieldset>
+    <fieldset>
+      <legend>Sexo</legend>
+      <input type="radio" name="sexo" id="sxmasc"><label for="sxmasc" value="Masculino"> Masculino</label><br>
+      <input type="radio" name="sexo" id="sxfem"> <label for="sxfem" value="Femenino">Feminino</label><br>
+    </fieldset>
+    <br>
+    <input type="submit" value="Enviar" id="botao">
+  </form>
+  
+  
+</body>
+</html>
