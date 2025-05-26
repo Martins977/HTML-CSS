@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Html</title>
+</head>
+<body>
+  <H1>Formulário</H1>
+  <br>
+  <form action="dados.php" method="post">
+    <p>
+      <select name="Estado" id="IEstado">
+      <optgroup label="Estados do Sudeste">
+      <option value="SP">São Paulo</option>
+       <option value="RJ">Rio de Janeiro</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="ES">Espirito Santo</option>
+      </optgroup>
+      <optgroup label="Estados do Nordeste">
+        <option value="Bahia">Bahia</option>
+        <option value="Pernambuco">Pernambuco</option>
+        <option value="Ceará">Ceará</option>
+        <option value="Maranhão">Maranhão</option>
+      </optgroup>
+      </select>
+    </p>
+    <p>
+      <label for="iprof"><h2>Profissão</h2></label>
+      <input type="text" name="prof" id="iprof" list="listprof">
+      <datalist id="listprof">
+        <option value="Gar">Garçom</option>
+        <option value="Med">Médico</option>
+        <option value="Dev">Desenvolvedor</option>
+        <option value="Coz">Cozinheiro</option>
+      </datalist>
+    </p>
+    <p>
+      <label for="desc">Descrição</label>
+      <br>
+      <br>
+      <textarea name="text" id="itext" cols="10"  placeholder="Escreva aqui" style="background-color: antiquewhite;"></textarea>
+    </p>
+    <input type="submit" value="Enviar">
+    <input type="reset">
+  </form>
+</body>
+</html>
