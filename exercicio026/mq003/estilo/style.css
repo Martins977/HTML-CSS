@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* Essa é a 2 forma de criar media query */
+
+@media all {
+  /* CONFIGURAÇÕES GERAIS*/ 
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+html , body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #233eff;
+  background-size: contain;
+}
+h1 {
+  text-align: center;
+  padding-top: 0.5em;
+  font-size: 3em;
+  text-shadow: 1px 1px 0px #1a2a9e;
+}
+
+@media screen and  (orientation:portrait) {
+  /* Orientação modo retrato (portrait)*/
+
+body {
+ background-image: url('../imagens/cev-portrait.jpg');
+ background-repeat: no-repeat;
+ background-position: bottom center;
+}
+}
+
+@media  screen and (orientation:landscape) {
+  /* Orientação modo Paisagem (Landscape)*/
+
+body {
+ 
+ background: url('../imagens/cev-landscape.jpg');
+ background-position: left bottom;
+ background-repeat: no-repeat;
+ 
+}
+}
