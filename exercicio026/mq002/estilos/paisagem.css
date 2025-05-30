@@ -2,9 +2,9 @@
 /* Orientação modo Paisagem (Landscape)*/
 
 body {
-  background-color: aquamarine;
+ 
  background: url('../imagens/cev-landscape.jpg');
  background-position: left bottom;
- background-repeat: none
+ background-repeat: no-repeat;
  ;
 }
