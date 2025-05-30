@@ -1,0 +1,21 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+h1 {
+  margin-bottom: 20px;
+}
+menu {
+  display: none;
+}
+li {
+  display: none;
+}
+article::after {
+  content: 'Esse artigo foi publicado no dia 29/05/2025';
+}
