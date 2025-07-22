@@ -1,43 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nota escolar</title>
+  <title>Formulário Escolar</title>
 </head>
-<style>
-  * {
-   font-family: Arial, Helvetica, sans-serif;
-  }
-</style>
 <body>
-  <h1>Período Letivo</h1>
-  <form  method="get" >
-    <p>
-      <label for="nome">Nome do Aluno</label>
-      <input type="text" name="nome" id="nome" required minlength="5" maxlength="15" placeholder="ex:Jão">
+  <h1>Nota escolar</h1>
+  <form action="dados.php" autocomplete="on" method="post">
+    <p><label for="idnome">Nome do Aluno:</label>
+    <input type="text" name="nome" id="idnome" placeholder="Digite seu nome" autocomplete="nickname"
+    required minlength="8">
     </p>
-    <p>
-      <label for="nota">Média Escolar</label>
-      <input type="number" name="nota" id="nota" required min="0" max="10" step="0.5" value="5">
+    <p><label for="idnota">Nota escolar:</label>
+      <input type="number" name="nota" id="idnota" required max="10" step="0.1">
     </p>
-    <p>
-      <label for="mes">Período Letivo</label>
-      <input type="month" name="mes" id="mes" >
+    <p><label for="idletivo">Perído Letivo</label>
+      <input type="month" name="letivo" id="idletivo" required value="2015-10">
     </p>
-    <p>
-      <label for="dia"> Data da prova </label>
-      <input type="date" name="dai" id="dia" required value="21/05/2025">
+    <p><label for="iddata">Data da Prova</label>
+      <input type="date" name="data" id="iddata" required value="2015-10-10">
     </p>
-    <p>
-      <label for="time">Hora da Prova</label>
-      <input type="time" name="time" id="time" value="17:00">
+    <p><label for="idhora">Hora da Prova</label>
+      <input type="time" name="hora" id="idhora" required >
     </p>
-    <p>
-      <label for="enviar">Enviar</label>
-      <input type="submit" name="enviar" id="enviar" value="enviar">
-       <input type="reset" name="limpar" id="limpar"  value="limpar">
-    </p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="limpar">
   </form>
 </body>
 </html>
