@@ -3,46 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulario Html</title>
+  <title>Document</title>
 </head>
+<style>
+  body {
+    background-color: rgb(136, 144, 158);
+
+  }
+  fieldset {
+    width: 25em;
+  }
+  .botao {
+    background-color: rgb(58, 97, 164);
+  }
+</style>
 <body>
-  <H1>Formulário</H1>
-  <br>
-  <form action="dados.php" method="post">
-    <p>
-      <select name="Estado" id="IEstado">
-      <optgroup label="Estados do Sudeste">
-      <option value="SP">São Paulo</option>
-       <option value="RJ">Rio de Janeiro</option>
-        <option value="MG">Minas Gerais</option>
-        <option value="ES">Espirito Santo</option>
-      </optgroup>
-      <optgroup label="Estados do Nordeste">
-        <option value="Bahia">Bahia</option>
-        <option value="Pernambuco">Pernambuco</option>
-        <option value="Ceará">Ceará</option>
-        <option value="Maranhão">Maranhão</option>
-      </optgroup>
-      </select>
-    </p>
-    <p>
-      <label for="iprof"><h2>Profissão</h2></label>
-      <input type="text" name="prof" id="iprof" list="listprof">
-      <datalist id="listprof">
-        <option value="Gar">Garçom</option>
-        <option value="Med">Médico</option>
-        <option value="Dev">Desenvolvedor</option>
-        <option value="Coz">Cozinheiro</option>
-      </datalist>
-    </p>
-    <p>
-      <label for="desc">Descrição</label>
-      <br>
-      <br>
-      <textarea name="text" id="itext" cols="10"  placeholder="Escreva aqui" style="background-color: antiquewhite;"></textarea>
-    </p>
-    <input type="submit" value="Enviar">
-    <input type="reset">
-  </form>
+  <h1>Insira suas informações</h1>
+  <form action="dados.php" autocomplete="on">
+  <fieldset>
+    <legend>Qual é o seu Estado?</legend>
+     
+      <div>
+        <label for="idestado"></label>
+        <select name="estado" id="idestado">
+          <optgroup>
+            <option value="ESTADO">-- Região Sudeste --</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="ES">Espirito Santo</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="ESTADO">-- Região Nordeste --</option>
+            <option value="CE">Ceará</option>
+            <option value="BA">Bahia</option>
+            <option value="PB">Paraiba</option>
+            </optgroup>
+            <br>
+        </select>
+      </div>
+    
+   </fieldset>
+   <fieldset>
+    <legend>Digite sua Profissão</legend>
+    <label for="idlist"></label>
+            <input type="text" name="list" id="idlist" list="ilist"  placeholder="Profissão">
+            <datalist id="ilist">
+              <option value="ADM">Adiministrador</option>
+              <option value="COZ">Cozinheiro</option>
+              <option value="MED">Médico</option>
+              <option value="DEV">Desenvolvedor Web</option>
+
+            </datalist>
+   </fieldset>
+   <br>
+   <input type="submit" value="Enviar" class="botao">
+   <input type="reset" value="Limpar" class="botao">
+    </form>
 </body>
 </html>

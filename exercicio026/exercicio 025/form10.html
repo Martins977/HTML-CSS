@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Testando Output</h1>
+  <form action="dados.php">
+    <p>
+      <label for="idnumber">Nível de Satisfação:</label>
+      <input type="range" name="number" id="idnumber" required max="10" value="5"
+      oninput="idvalor.innerHTML = Number(idnumber.value)">
+      <output id="idvalor"></output>
+    </p>
+  </form>
+</body>
+</html>
