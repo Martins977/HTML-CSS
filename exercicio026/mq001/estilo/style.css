@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* Media para monitor*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 1em;
+}
+
+header {
+  background-color: rgb(165, 165, 144);
+}
+header h1 {
+  text-align: center;
+  padding-top: 10px;
+}
+li {
+  display: inline-block;
+  padding: 10px;
+}
+li a {
+  text-decoration: none;
+  color:rgb(37, 37, 35);
+}
+li a:hover {
+color: rgb(222, 60, 6);
+}
+main {
+  display: block;
+  margin: auto;
+  width: 400px;
+}
+article h2 {
+  padding: 10px;
+}
+aside  h3 {
+  padding-top:10px ;
+}
+footer p {
+text-align: center;
+padding-top: 10px;
+}
