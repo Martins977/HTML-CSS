@@ -1,9 +1,9 @@
 @charset "UTF-8";
-
-/* Orientação modo retrato (portrait)*/
+/* Modo Retrarto (portrait) */
 
 body {
- background-image: url('../imagens/cev-portrait.jpg');
- background-repeat: no-repeat;
- background-position: bottom center;
+  background-image: url(../imagens/cev-portrait.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
